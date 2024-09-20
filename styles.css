@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(90deg, #020f20, #03485b);
+    color: #f5f5fc;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    
+    
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #hero {
+    background: #434242;
+    color: #fafafa;
+    background-image:url(my\ pic.jpg);
+    background-blend-mode: luminosity;
+    height: 800px;
+    width: 1350px;
+   
+  }
+  
+  #about, #projects, #contact {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  
+  .hero
+  {
+    background-image: url('my\ pic.jpg');
+    height: 600px;
+    justify-content: flex-start;  
+    align-items: center; 
+    padding-left: 20px;
+    
+    
+    
+  }
+  .hero p 
+  {
+    color: hsl(0, 0%, 100%);  
+    font-size:22px;
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.7);  
+    border: 2px ;
+    padding-right: 10px;
+    margin-right : 900px;
+    margin-top: 30px;
+    margin-left: 40px;
+    text-align: justify;
+  }
+  .hero h1
+  {
+    color: white;  /* Change text color to improve visibility */
+    font-size:28px;
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.7);  /* Adds shadow for better readability */
+    border: 2px; 
+  }
+
+ .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s;
+  animation: fadeIn 1s ease-in;
+  color: antiquewhite;
+  
+}
+.container h1
+{
+  border: 2px;
+  margin-bottom: 30px;
+  font-size:35px;
+  text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.7); 
+}
+
+.project h3 {
+  color: #3987e7;
+}
+
+.project-img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  animation: bounce 1s infinite alternate;
+}
+
+.project:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  margin-top: 10px;
+  background: #0072ff;
+  color: #fdf9f9;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #00c6ff;
+}
+.containers h1{
+  border: 2px;
+  margin-bottom: 30px;
+  font-size:35px;
+  text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.7); 
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+ 
+}
+
+form input,
+form textarea {
+  margin-bottom: 15px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px;
+  background: #0072ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #00c6ff;
+}
+
+
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  from {
+      transform: translateY(0);
+  }
+  to {
+      transform: translateY(-10px);
+  }
+}
